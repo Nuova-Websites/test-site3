@@ -1,0 +1,33 @@
+{
+  "name": "smeagles-dog-sitting",
+  "version": "1.0.0",
+  "description": "Production-ready website for Smeagles premium dog sitting services",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=8000",
+    "validate": "npx html-validator-cli index.html 404.html 500.html",
+    "format": "npx prettier --write \"**/*.{html,css,js,json}\"",
+    "lighthouse": "npx lighthouse http://localhost:8000 --view"
+  },
+  "keywords": [
+    "dog-sitting",
+    "pet-care",
+    "website",
+    "static-site",
+    "business"
+  ],
+  "author": "Smeagles Dog Sitting",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smeagles/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smeagles/website/issues"
+  },
+  "homepage": "https://www.smeagles.com"
+}
+

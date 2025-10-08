@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smeagles - Professional dog sitting services with experienced, loving care for your furry friends. Book trusted pet care today.">
+    <meta name="keywords" content="dog sitting, pet care, dog walker, pet sitter, dog boarding, Smeagles">
+    <meta name="author" content="Smeagles Dog Sitting">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smeagles - Premium Dog Sitting Services">
+    <meta property="og:description" content="Professional dog sitting services with experienced, loving care for your furry friends.">
+    <meta property="og:type" content="website">
+    
+    <title>Smeagles - Premium Dog Sitting Services | Trusted Pet Care</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🐕</span>
+                <span class="logo-text">Smeagles</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-cta-btn" onclick="scrollToContact()">Book Now</button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Welcome to Smeagles</span>
+                Premium Care for Your Precious Pups
+            </h1>
+            <p class="hero-description">
+                Professional dog sitting services with experienced, loving care. Your furry friend's home away from home.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToContact()">Book a Visit</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Licensed & Insured</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Expert Care</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-placeholder">
+                <span class="placeholder-icon">🐕‍🦺</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Comprehensive care tailored to your dog's unique needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">In-Home Sitting</h3>
+                    <p class="service-description">
+                        Your dog stays comfortable in their own environment while receiving personalized attention and care.
+                    </p>
+                    <ul class="service-features">
+                        <li>Regular feeding & fresh water</li>
+                        <li>Playtime & exercise</li>
+                        <li>Medication administration</li>
+                        <li>Daily photo updates</li>
+                    </ul>
+                    <div class="service-price">From $35/day</div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">🚶</div>
+                    <h3 class="service-title">Dog Walking</h3>
+                    <p class="service-description">
+                        Professional walks tailored to your dog's energy level and needs, rain or shine.
+                    </p>
+                    <ul class="service-features">
+                        <li>30 or 60-minute walks</li>
+                        <li>Individual or group walks</li>
+                        <li>GPS tracking available</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <div class="service-price">From $20/walk</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌙</div>
+                    <h3 class="service-title">Overnight Care</h3>
+                    <p class="service-description">
+                        Complete overnight supervision and care for your peace of mind during extended trips.
+                    </p>
+                    <ul class="service-features">
+                        <li>24/7 supervision</li>
+                        <li>Evening & morning walks</li>
+                        <li>Bedtime routine</li>
+                        <li>Emergency care available</li>
+                    </ul>
+                    <div class="service-price">From $65/night</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎾</div>
+                    <h3 class="service-title">Playtime & Exercise</h3>
+                    <p class="service-description">
+                        Energetic play sessions to keep your pup happy, healthy, and well-exercised.
+                    </p>
+                    <ul class="service-features">
+                        <li>Customized activities</li>
+                        <li>Socialization opportunities</li>
+                        <li>Mental stimulation</li>
+                        <li>Indoor & outdoor play</li>
+                    </ul>
+                    <div class="service-price">From $25/session</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💊</div>
+                    <h3 class="service-title">Special Needs Care</h3>
+                    <p class="service-description">
+                        Experienced care for senior dogs, puppies, and those with medical requirements.
+                    </p>
+                    <ul class="service-features">
+                        <li>Medication management</li>
+                        <li>Gentle exercise programs</li>
+                        <li>Special diet preparation</li>
+                        <li>Veterinary coordination</li>
+                    </ul>
+                    <div class="service-price">From $40/day</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3 class="service-title">Pet Check-Ins</h3>
+                    <p class="service-description">
+                        Quick visits to check on your pet, provide food, and ensure everything is running smoothly.
+                    </p>
+                    <ul class="service-features">
+                        <li>15-30 minute visits</li>
+                        <li>Feeding & water refresh</li>
+                        <li>Quick bathroom breaks</li>
+                        <li>Photo updates</li>
+                    </ul>
+                    <div class="service-price">From $15/visit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <span class="placeholder-icon">🐶</span>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Dogs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">About Smeagles</span>
+                    <h2 class="section-title">Passionate About Pups Since 2020</h2>
+                    <p class="about-description">
+                        At Smeagles, we understand that your dog is more than just a pet—they're family. 
+                        That's why we provide the highest quality care with the love and attention your furry 
+                        friend deserves.
+                    </p>
+                    <p class="about-description">
+                        Founded by certified pet care professionals, Smeagles has grown from a passion project 
+                        into a trusted name in dog sitting services. Our team is fully trained, licensed, and 
+                        insured, with extensive experience in animal behavior and care.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🎓</div>
+                            <div class="about-feature-content">
+                                <h4>Certified Professionals</h4>
+                                <p>All staff are certified in pet first aid and CPR</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🛡️</div>
+                            <div class="about-feature-content">
+                                <h4>Fully Insured & Bonded</h4>
+                                <p>Complete liability coverage for your peace of mind</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">❤️</div>
+                            <div class="about-feature-content">
+                                <h4>Genuine Love for Dogs</h4>
+                                <p>Every team member is a dedicated dog lover</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">What Pet Parents Say</h2>
+                <p class="section-description">Don't just take our word for it</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Smeagles has been a lifesaver! Our golden retriever Max absolutely loves his walks 
+                        with them. They send photos and updates which gives us such peace of mind when we're at work."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Mitchell</div>
+                            <div class="author-detail">Golden Retriever Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Professional, reliable, and genuinely caring. Our senior dog Bella has special needs 
+                        and the Smeagles team handles her medication and care perfectly. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div class="author-info">
+                            <div class="author-name">James Rodriguez</div>
+                            <div class="author-detail">Senior Dog Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "We were nervous leaving our puppy for the first time, but Smeagles made it so easy. 
+                        The overnight care was fantastic and Rocky came home happy and tired from all the play!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EC</div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Chen</div>
+                            <div class="author-detail">Puppy Parent</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Best dog sitting service we've ever used! They're punctual, professional, and our 
+                        two huskies are always excited when they arrive. Worth every penny!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DT</div>
+                        <div class="author-info">
+                            <div class="author-name">David Thompson</div>
+                            <div class="author-detail">Multi-Dog Household</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Exceptional service! They went above and beyond when our beagle had an emergency. 
+                        Their quick response and coordination with our vet was incredible."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LK</div>
+                        <div class="author-info">
+                            <div class="author-name">Lisa Kim</div>
+                            <div class="author-detail">Beagle Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Finally found a service we can trust! The team is amazing with our anxious rescue dog. 
+                        They're patient, kind, and truly understand dog behavior."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-detail">Rescue Dog Parent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Happy Moments</span>
+                <h2 class="section-title">Our Furry Friends</h2>
+                <p class="section-description">Captured moments with the dogs we care for</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🦮</div>
+                    <div class="gallery-overlay">
+                        <p>Walking Adventures</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🐕</div>
+                    <div class="gallery-overlay">
+                        <p>Playtime Fun</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🐩</div>
+                    <div class="gallery-overlay">
+                        <p>Happy Pups</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🐕‍🦺</div>
+                    <div class="gallery-overlay">
+                        <p>Training Sessions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🦴</div>
+                    <div class="gallery-overlay">
+                        <p>Treat Time</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🎾</div>
+                    <div class="gallery-overlay">
+                        <p>Fetch Champions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Book Your Dog's Next Adventure</h2>
+                    <p class="contact-description">
+                        Ready to give your furry friend the care they deserve? Contact us today to schedule 
+                        a meet-and-greet or book your first service.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">📞</div>
+                            <div class="contact-detail-content">
+                                <h4>Phone</h4>
+                                <p>(555) DOG-CARE</p>
+                                <p>(555) 364-2273</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">✉️</div>
+                            <div class="contact-detail-content">
+                                <h4>Email</h4>
+                                <p>hello@smeagles.com</p>
+                                <p>Response within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">🕐</div>
+                            <div class="contact-detail-content">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 7am - 8pm</p>
+                                <p>Sat-Sun: 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">📍</div>
+                            <div class="contact-detail-content">
+                                <h4>Service Area</h4>
+                                <p>Greater Metro Area</p>
+                                <p>15-mile radius</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dogName">Your Dog's Name</label>
+                            <input type="text" id="dogName" name="dogName">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="in-home">In-Home Sitting</option>
+                                <option value="walking">Dog Walking</option>
+                                <option value="overnight">Overnight Care</option>
+                                <option value="playtime">Playtime & Exercise</option>
+                                <option value="special">Special Needs Care</option>
+                                <option value="checkin">Pet Check-Ins</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your dog, special requirements, or any questions you have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <p class="form-note">We'll get back to you within 24 hours</p>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your message and will be in touch soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🐕</span>
+                        <span class="logo-text">Smeagles</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium dog sitting services with experienced, loving care for your furry friends.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">f</a>
+                        <a href="#" class="footer-social-link">📷</a>
+                        <a href="#" class="footer-social-link">🐦</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">In-Home Sitting</a></li>
+                        <li><a href="#services">Dog Walking</a></li>
+                        <li><a href="#services">Overnight Care</a></li>
+                        <li><a href="#services">Special Needs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📞 (555) 364-2273</li>
+                        <li>✉️ hello@smeagles.com</li>
+                        <li>🕐 Mon-Fri: 7am - 8pm</li>
+                        <li>📍 Greater Metro Area</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smeagles Dog Sitting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#">Cancellation Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+# Security Policy for Smeagles Dog Sitting
+
+Contact: mailto:security@smeagles.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.smeagles.com/.well-known/security.txt
+
+# Vulnerability Disclosure
+If you discover a security vulnerability, please email us at security@smeagles.com
+We take all security issues seriously and will respond within 48 hours.
+
+# PGP Key
+# Encryption: Available upon request
+
+Policy: https://www.smeagles.com/security-policy
+Acknowledgments: https://www.smeagles.com/security-acknowledgments
+
